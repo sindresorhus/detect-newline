@@ -35,7 +35,7 @@ if (argv.version) {
 }
 
 if (process.stdin.isTTY) {
-	if (input.length === 0) {
+	if (!input) {
 		help();
 		return;
 	}
