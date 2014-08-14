@@ -4,13 +4,13 @@
   "description": "Detect the dominant newline character of a string",
   "license": "MIT",
   "repository": "sindresorhus/detect-newline",
-  "bin": {
-    "detect-newline": "cli.js"
-  },
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "http://sindresorhus.com"
+  },
+  "bin": {
+    "detect-newline": "cli.js"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -37,8 +37,8 @@
     "char"
   ],
   "dependencies": {
-    "get-stdin": "^0.1.0",
-    "minimist": "^0.2.0"
+    "get-stdin": "^2.0.0",
+    "minimist": "^1.1.0"
   },
   "devDependencies": {
     "mocha": "*"

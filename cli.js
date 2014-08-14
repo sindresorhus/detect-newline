@@ -8,20 +8,21 @@ var input = argv._[0];
 
 function help() {
 	console.log([
-		pkg.description,
 		'',
-		'Usage',
-		'  $ detect-newline <string>',
-		'  $ cat unicorn.txt | detect-newline',
+		'  ' + pkg.description,
 		'',
-		'Example',
-		'  $ detect-newline "$(printf \'Unicorns\\nRainbows\')"',
-		'  \\n'
+		'  Usage',
+		'    detect-newline <string>',
+		'    cat unicorn.txt | detect-newline',
+		'',
+		'  Example',
+		'    detect-newline "$(printf \'Unicorns\\nRainbows\')"',
+		'    \\n'
 	].join('\n'));
 }
 
 function init(data) {
-	process.stdout.write(detectNewline(data));
+	process.stdout.write(detectNewline(data.toString()));
 }
 
 if (argv.help) {

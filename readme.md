@@ -29,13 +29,13 @@ $ npm install --global detect-newline
 ```sh
 $ detect-newline --help
 
-Usage
-  $ detect-newline <string>
-  $ cat unicorn.txt | detect-newline
+  Usage
+    detect-newline <string>
+    cat unicorn.txt | detect-newline
 
-Example
-  $ detect-newline "$(printf 'Unicorns\nRainbows')"
-  \n
+  Example
+    detect-newline "$(printf 'Unicorns\nRainbows')"
+    \n
 ```
 
 
