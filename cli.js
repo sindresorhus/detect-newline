@@ -22,7 +22,7 @@ function help() {
 }
 
 function init(data) {
-	process.stdout.write(detectNewline(data.toString()));
+	process.stdout.write(detectNewline(data));
 }
 
 if (argv.help) {
