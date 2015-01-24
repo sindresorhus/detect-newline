@@ -1,6 +1,6 @@
 {
   "name": "detect-newline",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Detect the dominant newline character of a string",
   "license": "MIT",
   "repository": "sindresorhus/detect-newline",
