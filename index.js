@@ -4,9 +4,14 @@ module.exports = function (str) {
 		throw new TypeError('Expected a string');
 	}
 
-	var newlines = (str.match(/(?:\r?\n)/g) || []);
+	var newlines = (str.match(/(?:\r?\n|\r)/g) || []);
 	var crlf = newlines.filter(function (el) { return el === '\r\n'; }).length;
-	var lf = newlines.length - crlf;
+	var cr = newlines.filter(function (el) { return el === '\r' }).length;
+	var lf = newlines.length - crlf - cr;
 
-	return crlf > lf ? '\r\n' : '\n';
+	var max = Math.max(crlf, cr, lf);
+
+	if (lf === max) return '\n';
+	if (crlf === max) return '\r\n';
+	if (cr === max) return '\r';
 };
