@@ -4,7 +4,7 @@ module.exports = function (str) {
 		throw new TypeError('Expected a string');
 	}
 
-	var newlines = (str.match(/(?:\r?\n)+/g) || []);
+	var newlines = (str.match(/(?:\r?\n)/g) || []);
 	var crlf = newlines.filter(function (el) { return el === '\r\n'; }).length;
 	var lf = newlines.length - crlf;
 
