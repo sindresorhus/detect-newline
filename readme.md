@@ -5,7 +5,7 @@
 
 ## Install
 
-```sh
+```
 $ npm install --save detect-newline
 ```
 
@@ -22,11 +22,11 @@ detectNewline('foo\nbar\nbaz\r\n');
 
 ## CLI
 
-```sh
+```
 $ npm install --global detect-newline
 ```
 
-```sh
+```
 $ detect-newline --help
 
   Usage
