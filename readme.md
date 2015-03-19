@@ -30,11 +30,11 @@ $ npm install --global detect-newline
 $ detect-newline --help
 
   Usage
-    detect-newline <string>
-    cat unicorn.txt | detect-newline
+    $ detect-newline <string>
+    $ cat unicorn.txt | detect-newline
 
   Example
-    detect-newline "$(printf 'Unicorns\nRainbows')"
+    $ detect-newline "$(printf 'Unicorns\nRainbows')"
     \n
 ```
 
