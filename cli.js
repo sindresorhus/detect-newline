@@ -13,7 +13,7 @@ var cli = meow({
 		'Example',
 		'  $ detect-newline "$(printf \'Unicorns\\nRainbows\')"',
 		'  \\n'
-	].join('\n')
+	]
 });
 
 function init(data) {
