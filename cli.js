@@ -17,7 +17,7 @@ var cli = meow({
 });
 
 function init(data) {
-	process.stdout.write(detectNewline(data));
+	process.stdout.write(detectNewline(data) || '');
 }
 
 if (process.stdin.isTTY) {
