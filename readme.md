@@ -13,10 +13,10 @@ $ npm install --save detect-newline
 ## Usage
 
 ```js
-var detectNewline = require('detect-newline');
+const detectNewline = require('detect-newline');
 
 detectNewline('foo\nbar\nbaz\r\n');
-//=> \n
+//=> '\n'
 ```
 
 
