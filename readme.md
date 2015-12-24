@@ -19,6 +19,8 @@ detectNewline('foo\nbar\nbaz\r\n');
 //=> '\n'
 ```
 
+Returns `undefined` when no newline character is found.
+
 
 ## CLI
 

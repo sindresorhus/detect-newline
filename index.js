@@ -5,6 +5,11 @@ module.exports = function (str) {
 	}
 
 	var newlines = (str.match(/(?:\r?\n)/g) || []);
+
+	if (newlines.length === 0) {
+		return null;
+	}
+
 	var crlf = newlines.filter(function (el) { return el === '\r\n'; }).length;
 	var lf = newlines.length - crlf;
 
