@@ -22,23 +22,10 @@ detectNewline('foo\nbar\nbaz\r\n');
 Returns `null` when no newline character is found.
 
 
-## CLI
+## Related
 
-```
-$ npm install --global detect-newline
-```
-
-```
-$ detect-newline --help
-
-  Usage
-    $ detect-newline <string>
-    $ cat unicorn.txt | detect-newline
-
-  Example
-    $ detect-newline "$(printf 'Unicorns\nRainbows')"
-    \n
-```
+- [detect-newline-cli](https://github.com/sindresorhus/detect-newline-cli) - CLI for this module
+- [detect-indent](https://github.com/sindresorhus/detect-indent) - Detect the indentation of code
 
 
 ## License

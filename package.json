@@ -14,15 +14,12 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "xo && ava"
   },
   "files": [
-    "index.js",
-    "cli.js"
+    "index.js"
   ],
   "keywords": [
-    "cli-app",
-    "cli",
     "newline",
     "linebreak",
     "line-break",
@@ -34,11 +31,8 @@
     "character",
     "char"
   ],
-  "dependencies": {
-    "get-stdin": "^4.0.1",
-    "meow": "^3.3.0"
-  },
   "devDependencies": {
-    "mocha": "*"
+    "ava": "*",
+    "xo": "*"
   }
 }

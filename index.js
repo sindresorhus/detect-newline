@@ -10,7 +10,10 @@ module.exports = function (str) {
 		return null;
 	}
 
-	var crlf = newlines.filter(function (el) { return el === '\r\n'; }).length;
+	var crlf = newlines.filter(function (el) {
+		return el === '\r\n';
+	}).length;
+
 	var lf = newlines.length - crlf;
 
 	return crlf > lf ? '\r\n' : '\n';

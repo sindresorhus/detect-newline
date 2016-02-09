@@ -1,11 +1,10 @@
-'use strict';
-var assert = require('assert');
-var detectNewline = require('./');
+import test from 'ava';
+import m from './';
 
-it('should return the used newline character', function () {
-	assert.equal(detectNewline('foo\r\nbar\r\nbaz\n\n\n'), '\n');
-	assert.equal(detectNewline('foo\r\nbar\r\nbaz\n'), '\r\n');
-	assert.equal(detectNewline('foo\nbar\nbaz\r\n'), '\n');
-	assert.equal(detectNewline('foo\nbar\r\n'), '\n');
-	assert.equal(detectNewline('foo'), null);
+test(t => {
+	t.is(m('foo\r\nbar\r\nbaz\n\n\n'), '\n');
+	t.is(m('foo\r\nbar\r\nbaz\n'), '\r\n');
+	t.is(m('foo\nbar\nbaz\r\n'), '\n');
+	t.is(m('foo\nbar\r\n'), '\n');
+	t.is(m('foo'), null);
 });
