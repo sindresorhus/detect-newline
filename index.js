@@ -18,3 +18,7 @@ module.exports = function (str) {
 
 	return crlf > lf ? '\r\n' : '\n';
 };
+
+module.exports.graceful = function (str) {
+	return module.exports(str) || '\n';
+};

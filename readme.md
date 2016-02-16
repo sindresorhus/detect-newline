@@ -19,7 +19,16 @@ detectNewline('foo\nbar\nbaz\r\n');
 //=> '\n'
 ```
 
-Returns `null` when no newline character is found.
+
+## API
+
+### detectNewline(input)
+
+Returns detected newline or `null` when no newline character is found.
+
+### detectNewline.graceful(input)
+
+Returns detected newline or `\n` when no newline character is found.
 
 
 ## Related
