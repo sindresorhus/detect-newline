@@ -1,11 +1,11 @@
 import test from 'ava';
-import m from './';
+import detectNewline from '.';
 
-test(t => {
-	t.is(m('foo\r\nbar\r\nbaz\n\n\n'), '\n');
-	t.is(m('foo\r\nbar\r\nbaz\n'), '\r\n');
-	t.is(m('foo\nbar\nbaz\r\n'), '\n');
-	t.is(m('foo\nbar\r\n'), '\n');
-	t.is(m('foo'), null);
-	t.is(m.graceful('foo'), '\n');
+test('main', t => {
+	t.is(detectNewline('foo\r\nbar\r\nbaz\n\n\n'), '\n');
+	t.is(detectNewline('foo\r\nbar\r\nbaz\n'), '\r\n');
+	t.is(detectNewline('foo\nbar\nbaz\r\n'), '\n');
+	t.is(detectNewline('foo\nbar\r\n'), '\n');
+	t.is(detectNewline('foo'), null);
+	t.is(detectNewline.graceful('foo'), '\n');
 });
