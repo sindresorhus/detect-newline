@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save detect-newline
+$ npm install detect-newline
 ```
 
 
@@ -22,11 +22,11 @@ detectNewline('foo\nbar\nbaz\r\n');
 
 ## API
 
-### detectNewline(input)
+### detectNewline(string)
 
 Returns detected newline or `null` when no newline character is found.
 
-### detectNewline.graceful(input)
+### detectNewline.graceful(string)
 
 Returns detected newline or `\n` when no newline character is found.
 
