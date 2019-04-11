@@ -24,11 +24,11 @@ detectNewline('foo\nbar\nbaz\r\n');
 
 ### detectNewline(string)
 
-Returns detected newline or `null` when no newline character is found.
+Returns the detected newline or `undefined` when no newline character is found.
 
 ### detectNewline.graceful(string)
 
-Returns detected newline or `\n` when no newline character is found.
+Returns the detected newline or `\n` when no newline character is found.
 
 
 ## Related
@@ -39,4 +39,4 @@ Returns detected newline or `\n` when no newline character is found.
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

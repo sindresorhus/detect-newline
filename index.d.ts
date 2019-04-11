@@ -2,7 +2,7 @@ declare const detectNewline: {
 	/**
 	Detect the dominant newline character of a string.
 
-	@returns Detected newline or `null` when no newline character is found.
+	@returns The detected newline or `undefined` when no newline character is found.
 
 	@example
 	```
@@ -12,7 +12,7 @@ declare const detectNewline: {
 	//=> '\n'
 	```
 	*/
-	(string: string): '\r\n' | '\n' | null;
+	(string: string): '\r\n' | '\n' | undefined;
 
 	/**
 	Detect the dominant newline character of a string.
