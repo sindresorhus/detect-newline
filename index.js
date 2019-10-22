@@ -18,4 +18,4 @@ const detectNewline = string => {
 };
 
 module.exports = detectNewline;
-module.exports.graceful = string => detectNewline(string) || '\n';
+module.exports.graceful = string => (typeof string === 'string' && detectNewline(string)) || '\n';

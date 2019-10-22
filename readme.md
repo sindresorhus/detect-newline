@@ -26,7 +26,7 @@ detectNewline('foo\nbar\nbaz\r\n');
 
 Returns the detected newline or `undefined` when no newline character is found.
 
-### detectNewline.graceful(string)
+### detectNewline.graceful(any)
 
 Returns the detected newline or `\n` when no newline character is found.
 
