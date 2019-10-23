@@ -22,7 +22,7 @@ declare const detectNewline: {
 	@returns Returns detected newline or `\n` when no newline character is found.
 	*/
 	graceful<T>(string: T & IsString<T>): '\r\n' | '\n';
-	graceful(string?: any): '\n';
+	graceful(string?: unknown): '\n';
 };
 
 export = detectNewline;
