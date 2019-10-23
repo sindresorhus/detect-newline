@@ -1,5 +1,3 @@
-type IsString<T> = T extends string ? T : never;
-
 declare const detectNewline: {
 	/**
 	Detect the dominant newline character of a string.
@@ -21,7 +19,7 @@ declare const detectNewline: {
 
 	@returns Returns detected newline or `\n` when no newline character is found.
 	*/
-	graceful<T>(string: T & IsString<T>): '\r\n' | '\n';
+	graceful(string: string): '\r\n' | '\n';
 	graceful(string?: unknown): '\n';
 };
 
