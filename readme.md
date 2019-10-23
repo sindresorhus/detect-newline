@@ -28,7 +28,7 @@ Returns the detected newline or `undefined` when no newline character is found.
 
 ### detectNewline.graceful(any)
 
-Returns the detected newline or `\n` when no newline character is found.
+Returns the detected newline or `\n` when no newline character is found or the input is not a string.
 
 
 ## Related
