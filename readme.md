@@ -1,4 +1,4 @@
-# detect-newline [![Build Status](https://travis-ci.org/sindresorhus/detect-newline.svg?branch=master)](https://travis-ci.org/sindresorhus/detect-newline)
+# detect-newline
 
 > Detect the dominant newline character of a string
 
