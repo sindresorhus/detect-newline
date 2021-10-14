@@ -1,26 +1,30 @@
-declare const detectNewline: {
-	/**
-	Detect the dominant newline character of a string.
+/**
+Detect the dominant newline character of a string.
 
-	@returns The detected newline or `undefined` when no newline character is found.
+@returns The detected newline or `undefined` when no newline character is found.
 
-	@example
-	```
-	import detectNewline = require('detect-newline');
+@example
+```
+import {detectNewline} from 'detect-newline';
 
-	detectNewline('foo\nbar\nbaz\r\n');
-	//=> '\n'
-	```
-	*/
-	(string: string): '\r\n' | '\n' | undefined;
+detectNewline('foo\nbar\nbaz\r\n');
+//=> '\n'
+```
+*/
+export function detectNewline(string: string): '\r\n' | '\n' | undefined;
 
-	/**
-	Detect the dominant newline character of a string.
+/**
+Detect the dominant newline character of a string.
 
-	@returns The detected newline or `\n` when no newline character is found or the input is not a string.
-	*/
-	graceful(string: string): '\r\n' | '\n';
-	graceful(string?: unknown): '\n';
-};
+@returns The detected newline or `\n` when no newline character is found or the input is not a string.
 
-export = detectNewline;
+@example
+```
+import {detectNewlineGraceful} from 'detect-newline';
+
+detectNewlineGraceful('foo');
+//=> '\n'
+```
+*/
+export function detectNewlineGraceful(string: string): '\r\n' | '\n';
+export function detectNewlineGraceful(string?: unknown): '\n';
