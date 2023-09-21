@@ -21,11 +21,11 @@ detectNewline('foo\nbar\nbaz\r\n');
 
 ### detectNewline(string)
 
-Returns the detected newline or `undefined` when no newline character is found.
+Returns the detected newline or `undefined` when no newline character is found or `\n` when no dominant newline is present.
 
 ### detectNewlineGraceful(unknown)
 
-Returns the detected newline or `\n` when no newline character is found or the input is not a string.
+Returns the detected newline or `\n` when no newline character is found, no dominant newline is present, or the input is not a string.
 
 ## Related
 
